@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import dummyData from '../../instagram/src/Components/data/dummy-data';
-import PostsContainer from './components/PostsContainer/PostsContainer';
-import SearchBar from './components/SearchBar/SearchBarContainer';
+import dummyData from './Components/data/dummy-data';
+import PostsContainers from './Components/Posts/PostsContainers';
+import SearchBar from './Components/SearchBar/SearchBarContainer';
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar />
-        <PostsContainer posts={this.state.posts} />
+        <PostsContainers posts={this.state.posts} />
       </div>
     );
   }
